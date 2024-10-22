@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papyrus</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+  <!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/> -->
+
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+  <style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+    /* Basic styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Header with logo and visitor counter */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+    }
+    
+    header img {
+      height: 50px;
+    }
+
+    .visitor-counter {
+        background-color: #555;
+    color: rgb(188, 144, 32);    
+    font-size: 0.9rem;
+      margin-right: 15px;
+    }
+
+      /* Navbar Container */
+
+
+
+      nav {
+      display: flex;
+      justify-content: center; /* Centers items horizontally */
+      align-items: center;     /* Centers items vertically */
+      background-color: #333;
+      padding: 20px 0;         /* Adds space above and below the navbar */
+      margin-top: 30px;       
+        /*Pushes the navbar down */
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Navigation Menu */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around; /* Spreads menu items evenly */
+      width: 100%;                    /* Menu width will be 80% of screen */
+    }
+
+    nav ul li {
+      margin: 0 20px;                /* Adds horizontal space between items */
+    }
+
+    nav ul li a {
+        background-color: rgb(235, 235, 235);
+      color: #000000;
+      text-decoration: none;
+      font-size: 1.5rem;             /* Increases the font size */
+      padding: 10px 20px;            /* Adds some padding to the links */
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Hover Effect on Links */
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #555;
+      color: #f1c40f;
+    }
+
+    
+    /* Hero section */
+    .home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .home img {
+      height: 150px;
+      margin: 0 15px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column; /* Stack menu items vertically on small screens */
+        width: 100%;            /* Menu takes full width on mobile */
+      }
+      nav {
+        padding: 30px 0;        /* Reduce padding for mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with logo and visitor counter -->
+  <header>
+    <div class="logo">
+      <img style="background-color: #333;" src="./Photos/logo.webp" alt="Logo"> 
+    </div>
+    <div class="visitor-counter">
+      Visitors: <span id="visitorCount">0</span>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav style="background-color: white;">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#birthday">Birthday</a></li>
+      <li><a href="#anniversary">Anniversary</a></li>
+      <li><a href="#friendship">Friendship</a></li>
+      <li><a href="#new-year">New Year</a></li>
+      <li><a href="#mothers-day">Mother’s Day</a></li>
+      <li><a href="./Gallery/gallery.html">Gallery</a></li> <!-- New Gallery link -->
+    </ul>
+  </nav>
+
+
+<!-- Welcome image -->
+
+<div class="welcome-text">
+    <h1 style="color: rgb(197, 152, 39);">Welcome to Papyrus</h1>
+    <p  style="color: rgb(197, 152, 39);">making every celebration shine a little brighter! Find inspiration for every occasion.</p>
+</div>
+
+    <!-- welcome swiper -->
+
+   <!-- Second Swiper -->
+<!-- Freemode Swiper -->
+<div class="swiper-container swiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./Photos/http___images.salsify.com_image_upload_q_70_e4prrw96wilqzmjz3wcj.jpg" alt="Image 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./Photos/http___images.salsify.com_image_upload_q_70_eyrza6vk3jfva7ztdipz.jpg" alt="Image 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./Photos/https___images.salsify.com_image_upload_q_70_jezdvz65jiw35lmvbgu1.jpg" alt="Image 3" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./Photos/https___images.salsify.com_image_upload_q_70_fbnfihwiixbtjl5ccx0s.jpg" alt="Image 4" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./Photos/http___images.salsify.com_image_upload_q_70_iudwenbsrmwivssh57et.jpg" alt="Image 4" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./Photos/http___images.salsify.com_image_upload_q_70_lk44plen9akcpdehqcrl.jpg" alt="Image 4" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./Photos/http___images.salsify.com_image_upload_q_70_vya1lhfbbkbiuxnhhjpy.jpg" alt="Image 4" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./Photos/lightcard.jpg" alt="Image 4" />
+      </div>
+    </div>
+    <div style=" margin-bottom: -60px;" class="swiper-pagination"></div>
+  </div>
+  
+  <!-- Optional Pagination or Navigation  -->
+
+
+  <!-- <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div> -->
+
+</div>
+
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Swiper Slides -->
+          <div class="swiper-slide"><img src="./Photos/http___images.salsify.com_image_upload_q_70_e4prrw96wilqzmjz3wcj.jpg" alt="Card Image 1"></div>
+          <div class="swiper-slide"><img src="./Gallery/Dead inside.png" alt="Card Image 2"></div>
+          <div class="swiper-slide"><img src="./Gallery/hillsongunited_1693691264493.jpg" alt="Card Image 3"></div>
+          <div class="swiper-slide"><img src="./Gallery/kimkardashian_1695758773967.jpg" alt="Card Image 4"></div>
+          <div class="swiper-slide"><img src="./Gallery/IMG-20230123-WA0202.jpg" alt="Card Image 5"></div>
+        </div>
+    
+        Swiper Navigation Buttons
+        <div class="swiper-button-next" style="  color: #ffffff;"></div>
+        <div class="swiper-button-prev" style="  color: #ffffff;"></div>
+      </div>
+    
+      <!-- Swiper JS from CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+  
+ 
+
+ <!-- Sections -->
+ <section id="home">
+    <h2>Make the Moment Extraordinary</h2>
+    <p>Browse through the different categories to find your perfect card.</p>
+    <img src="./Photos/http___images.salsify.com_image_upload_q_70_e4prrw96wilqzmjz3wcj.jpg" alt="Card Image 1">
+    <img src="card2.jpg" alt="Card Image 2">
+    <img src="card3.jpg" alt="Card Image 3">
+  </section>
+
+  <section id="birthday">
+    <h2>Birthday Cards</h2>
+    <p>Find the perfect birthday card for your loved ones!</p>
+  </section>
+
+  <section id="anniversary">
+    <h2>Anniversary Cards</h2>
+    <p>Celebrate the joy of love and togetherness with our anniversary cards.</p>
+  </section>
+
+  <section id="friendship">
+    <h2>Friendship Cards</h2>
+    <p>Express your appreciation for your best friends with our friendship cards.</p>
+  </section>
+
+  <section id="new-year">
+    <h2>New Year Cards</h2>
+    <p>Welcome the new year with joy by sharing our vibrant new year cards.</p>
+  </section>
+
+  <section id="mothers-day">
+    <h2>Mother's Day Cards</h2>
+    <p>Show your love and gratitude to the most important woman in your life.</p>
+  </section> 
+  <script>
+    // Visitor Counter (Mocked)
+    let visitorCount = Math.floor(Math.random() * 1000) + 1;
+    document.getElementById('visitorCount').innerText = visitorCount;
+
+    const swiper = new Swiper('.mySwiper', {
+          loop: true, // Enables infinite loop
+          autoplay: {
+            delay: 2500, // Slides will change every 2.5 seconds
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+    });
+
+    const swiper2 = new Swiper('.swiper2', {
+    slidesPerView: 3, // Display 4 slides at a time
+    spaceBetween: 40, // Spacing between the slides
+    freeMode: true, // Enable freemode, allowing free scrolling
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      // Adjust the number of slides on smaller screens
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 25,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+  
+
+
+
+ 
+
+
+
+
+    // Scroll Ticker (Example)
+    // Geolocation and ticker functionality can be added here with JavaScript
+  </script>
+</body>
+</html>
+
